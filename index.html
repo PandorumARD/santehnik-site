@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ремонт санузлов под ключ</title>
+    <title>Ремонт санузла под ключ</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -17,8 +17,8 @@
         <p class="label">Сантехнические и электромонтажные работы</p>
 
         <h1>
-            Ремонт санузлов от 
-            <span class="price-highlight">250&nbsp;000&nbsp;₽</span>
+            Ремонт санузла от 
+            <span class="price-highlight">270&nbsp;000&nbsp;₽</span>
         </h1>
 
         <p class="hero-text">Замер бесплатно, работа по договору и гарантия 3 года</p>
@@ -51,7 +51,6 @@
     <h2>Что входит в ремонт</h2>
 
     <div class="steps">
-
         <div class="step">
             <h3>1. Демонтажные работы:</h3>
             <ul>
@@ -64,31 +63,30 @@
         <div class="step">
             <h3>2. Черновые работы (подготовка):</h3>
             <ul>
-                <li>Замена водопроводных и канализационных труб (разводка труб по точкам).</li>
-                <li>Монтаж электропроводки (розеток, выключателей, освещения).</li>
-                <li>Выравнивание стен (штукатурка) и пола (стяжка) по уровню.</li>
-                <li>Гидроизоляция мокрых зон (пола и примыканий к стенам).</li>
+                <li>Замена водопроводных и канализационных труб.</li>
+                <li>Монтаж электропроводки.</li>
+                <li>Выравнивание стен и пола.</li>
+                <li>Гидроизоляция мокрых зон.</li>
             </ul>
         </div>
 
         <div class="step">
             <h3>3. Чистовая отделка:</h3>
             <ul>
-                <li>Укладка керамической плитки или керамогранита.</li>
-                <li>Монтаж потолка (натяжной, реечный или окрашивание).</li>
-                <li>Затирка швов плитки.</li>
+                <li>Укладка плитки или керамогранита.</li>
+                <li>Монтаж потолка.</li>
+                <li>Затирка швов.</li>
             </ul>
         </div>
 
         <div class="step">
-            <h3>4. Монтаж сантехники и аксессуаров:</h3>
+            <h3>4. Монтаж сантехники:</h3>
             <ul>
-                <li>Установка ванны, душевой кабины, унитаза или инсталляции.</li>
-                <li>Монтаж раковины со смесителем.</li>
-                <li>Установка полотенцесушителя, зеркал, осветительных приборов и мебели для ванной комнаты.</li>
+                <li>Установка ванны или душевой кабины.</li>
+                <li>Монтаж раковины.</li>
+                <li>Установка аксессуаров.</li>
             </ul>
         </div>
-
     </div>
 </section>
 
@@ -97,7 +95,6 @@
 
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-
             <div class="swiper-slide"><img src="images/work1.jpg"></div>
             <div class="swiper-slide"><img src="images/work2.jpg"></div>
             <div class="swiper-slide"><img src="images/work3.jpg"></div>
@@ -107,7 +104,6 @@
             <div class="swiper-slide"><img src="images/work7.jpg"></div>
             <div class="swiper-slide"><img src="images/work8.jpg"></div>
             <div class="swiper-slide"><img src="images/work9.jpg"></div>
-
         </div>
 
         <div class="swiper-button-next"></div>
@@ -117,7 +113,7 @@
 
 <section class="price">
     <h2>Стоимость</h2>
-    <p>Санузел под ключ — от <span>250&nbsp;000&nbsp;₽</span></p>
+    <p>Санузел под ключ — от <span>270&nbsp;000&nbsp;₽</span></p>
 </section>
 
 <section class="contacts">
@@ -141,6 +137,11 @@ new Swiper(".mySwiper", {
     loop: true,
     spaceBetween: 20,
     slidesPerView: 3,
+    breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -150,20 +151,15 @@ new Swiper(".mySwiper", {
 // модалка
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modalImg");
-const close = document.querySelector(".close");
 
 document.querySelectorAll(".swiper-slide img").forEach(img => {
-    img.addEventListener("click", () => {
+    img.onclick = () => {
         modal.style.display = "flex";
         modalImg.src = img.src;
-    });
+    };
 });
 
-close.onclick = () => modal.style.display = "none";
-
-modal.onclick = (e) => {
-    if (e.target !== modalImg) modal.style.display = "none";
-};
+modal.onclick = () => modal.style.display = "none";
 </script>
 
 </body>
