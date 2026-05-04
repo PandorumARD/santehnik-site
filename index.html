@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт санузлов под ключ</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-content">
+        <p class="label">Сантехнические и электромонтажные работы</p>
+
+        <h1>
+            Ремонт санузлов от 
+            <span class="price-highlight">250&nbsp;000&nbsp;₽</span>
+        </h1>
+
+        <p class="hero-text">Замер бесплатно, работа по договору и гарантия 3 года</p>
+
+        <div class="hero-buttons">
+            <a href="tel:+79328503100" class="btn">Позвонить</a>
+            <a href="#services" class="btn btn-light">Услуги</a>
+        </div>
+    </div>
+</header>
+
+<section class="advantages">
+    <div class="card">
+        <h3>Замер бесплатно</h3>
+        <p>Приедем, оценим объём работ и проконсультируем.</p>
+    </div>
+
+    <div class="card">
+        <h3>Договор</h3>
+        <p>Все условия фиксируются официально перед началом работ.</p>
+    </div>
+
+    <div class="card">
+        <h3>Гарантия 3 года</h3>
+        <p>Даём гарантию на выполненные работы.</p>
+    </div>
+</section>
+
+<section class="section" id="services">
+    <h2>Что входит в ремонт</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <h3>1. Демонтажные работы:</h3>
+            <ul>
+                <li>Демонтаж старой сантехники, труб и полотенцесушителя.</li>
+                <li>Снятие старой плитки, штукатурки и напольного покрытия.</li>
+                <li>Вынос и вывоз строительного мусора.</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>2. Черновые работы (подготовка):</h3>
+            <ul>
+                <li>Замена водопроводных и канализационных труб (разводка труб по точкам).</li>
+                <li>Монтаж электропроводки (розеток, выключателей, освещения).</li>
+                <li>Выравнивание стен (штукатурка) и пола (стяжка) по уровню.</li>
+                <li>Гидроизоляция мокрых зон (пола и примыканий к стенам).</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>3. Чистовая отделка:</h3>
+            <ul>
+                <li>Укладка керамической плитки или керамогранита.</li>
+                <li>Монтаж потолка (натяжной, реечный или окрашивание).</li>
+                <li>Затирка швов плитки.</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>4. Монтаж сантехники и аксессуаров:</h3>
+            <ul>
+                <li>Установка ванны, душевой кабины, унитаза или инсталляции.</li>
+                <li>Монтаж раковины со смесителем.</li>
+                <li>Установка полотенцесушителя, зеркал, осветительных приборов и мебели для ванной комнаты.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section class="works">
+    <h2>Наши работы</h2>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide"><img src="images/work1.jpg"></div>
+            <div class="swiper-slide"><img src="images/work2.jpg"></div>
+            <div class="swiper-slide"><img src="images/work3.jpg"></div>
+            <div class="swiper-slide"><img src="images/work4.jpg"></div>
+            <div class="swiper-slide"><img src="images/work5.jpg"></div>
+            <div class="swiper-slide"><img src="images/work6.jpg"></div>
+            <div class="swiper-slide"><img src="images/work7.jpg"></div>
+            <div class="swiper-slide"><img src="images/work8.jpg"></div>
+            <div class="swiper-slide"><img src="images/work9.jpg"></div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<section class="price">
+    <h2>Стоимость</h2>
+    <p>Санузел под ключ — от <span>250&nbsp;000&nbsp;₽</span></p>
+</section>
+
+<section class="contacts">
+    <h2>Контакты</h2>
+    <p>Телефон: +7 (932) 850-31-00</p>
+    <p>Email: ilyaru92@mail.ru</p>
+    <a href="tel:+79328503100" class="btn">Позвонить</a>
+</section>
+
+<!-- МОДАЛКА -->
+<div class="modal" id="modal">
+    <span class="close">&times;</span>
+    <img class="modal-img" id="modalImg">
+</div>
+
+<!-- Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 3,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+// модалка
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImg");
+const close = document.querySelector(".close");
+
+document.querySelectorAll(".swiper-slide img").forEach(img => {
+    img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+    });
+});
+
+close.onclick = () => modal.style.display = "none";
+
+modal.onclick = (e) => {
+    if (e.target !== modalImg) modal.style.display = "none";
+};
+</script>
+
+</body>
+</html>
