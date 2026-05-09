@@ -6,84 +6,143 @@
         (function(m,e,t,r,i,k,a){
             m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
             m[i].l=1*new Date();
-            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) { return; }
+            }
             k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
         })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109084386', 'ym');
 
-        ym(109084386, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+        ym(109084386, 'init', {
+            ssr:true,
+            webvisor:true,
+            clickmap:true,
+            ecommerce:"dataLayer",
+            referrer: document.referrer,
+            url: location.href,
+            accurateTrackBounce:true,
+            trackLinks:true
+        });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/109084386" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/109084386" style="position:absolute; left:-9999px;" alt="">
+        </div>
+    </noscript>
     <!-- /Yandex.Metrika counter -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ремонт санузла под ключ | Качественно и с гарантией</title>
+    <title>Ремонт санузла под ключ | Ильяр — Москва и МО</title>
+    <meta name="description" content="Ремонт санузла под ключ в Москве и Московской области. Плиточные, сантехнические и электромонтажные работы. Гарантия 3 года, работа по договору. От 100 000 ₽.">
+
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
+
 <body>
 
-<header class="hero">
-    <div class="container hero-content">
-        <p class="label">Плиточные, сантехнические и электромонтажные работы</p>
-        <h1>Ремонт санузла от <span class="price-highlight">100 000 ₽</span></h1>
-        <p class="hero-text">Работаем по Москве и Московской области • Замер бесплатно • Работа по договору • Гарантия 3 года</p>
-        <div class="hero-buttons">
-            <a href="tel:+79328503100" class="btn btn-primary">Позвонить</a>
-            <a href="#services" class="btn btn-light">Услуги</a>
-            <a href="#contacts" class="btn btn-light">Контакты</a>
+<!-- Sticky nav -->
+<nav class="sticky-nav" id="stickyNav">
+    <div class="container nav-inner">
+        <div class="nav-links">
+            <a href="#services" class="nav-link">Услуги</a>
+            <a href="#works" class="nav-link">Работы</a>
+            <a href="#contacts" class="nav-link">Контакты</a>
         </div>
+        <a href="tel:+79328503100" class="btn btn-primary btn-sm">Позвонить</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <p class="label reveal">Плиточные · Сантехнические · Электромонтажные работы</p>
+        <h1 class="reveal">Ремонт санузла<br>от <span class="price-highlight">100 000 ₽</span></h1>
+        <p class="hero-text reveal">
+            Работаем по Москве и МО&nbsp;• Замер бесплатно&nbsp;• Договор&nbsp;• Гарантия 3 года
+        </p>
+        <div class="hero-buttons reveal">
+            <a href="tel:+79328503100" class="btn btn-primary btn-call">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.18 6.18l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Позвонить
+            </a>
+            <a href="#services" class="btn btn-glass">Услуги</a>
+            <a href="#contacts" class="btn btn-glass">Контакты</a>
+        </div>
+    </div>
+    <div class="hero-scroll">
+        <span>Листайте вниз</span>
+        <div class="scroll-line"></div>
     </div>
 </header>
 
-<section class="advantages container">
-    <div class="card">
-        <div class="card-icon">🚗</div>
-        <h3>Выезд бесплатно</h3>
-        <p>Приедем, оценим объём работ и проконсультируем.</p>
-    </div>
-    <div class="card">
-        <div class="card-icon">📜</div>
-        <h3>Договор</h3>
-        <p>Все условия фиксируются официально перед началом работ.</p>
-    </div>
-    <div class="card">
-        <div class="card-icon">🛡️</div>
-        <h3>Гарантия 3 года</h3>
-        <p>Даём официальную гарантию на все выполненные работы.</p>
+<!-- Advantages -->
+<section class="advantages-wrap">
+    <div class="container advantages">
+        <div class="card reveal">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Выезд бесплатно</h3>
+            <p>Приедем, оценим объём работ и проконсультируем без обязательств.</p>
+        </div>
+        <div class="card reveal">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3>Договор</h3>
+            <p>Все условия фиксируются официально перед началом работ.</p>
+        </div>
+        <div class="card reveal">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Гарантия 3 года</h3>
+            <p>Официальная гарантия на все выполненные работы.</p>
+        </div>
     </div>
 </section>
 
+<!-- Services -->
 <section class="section container" id="services">
-    <h2 class="title-center">Что входит в ремонт</h2>
+    <h2 class="title-center reveal">Что входит в ремонт</h2>
+
     <div class="steps">
-        <div class="step">
-            <h3><span>01.</span> Демонтажные работы</h3>
+        <div class="step reveal">
+            <div class="step-num">01</div>
+            <h3>Демонтажные работы</h3>
             <ul>
                 <li>Демонтаж старой сантехники и труб</li>
                 <li>Снятие старой плитки и штукатурки</li>
                 <li>Вынос строительного мусора</li>
             </ul>
         </div>
-        <div class="step">
-            <h3><span>02.</span> Черновые работы</h3>
+        <div class="step reveal">
+            <div class="step-num">02</div>
+            <h3>Черновые работы</h3>
             <ul>
                 <li>Замена труб водоснабжения</li>
                 <li>Монтаж электропроводки</li>
                 <li>Выравнивание стен и пола</li>
             </ul>
         </div>
-        <div class="step">
-            <h3><span>03.</span> Чистовая отделка</h3>
+        <div class="step reveal">
+            <div class="step-num">03</div>
+            <h3>Чистовая отделка</h3>
             <ul>
                 <li>Укладка плитки и затирка швов</li>
                 <li>Монтаж потолка</li>
                 <li>Установка освещения</li>
             </ul>
         </div>
-        <div class="step">
-            <h3><span>04.</span> Монтаж сантехники</h3>
+        <div class="step reveal">
+            <div class="step-num">04</div>
+            <h3>Монтаж сантехники</h3>
             <ul>
                 <li>Установка ванны, душа, раковины</li>
                 <li>Монтаж смесителей и аксессуаров</li>
@@ -93,57 +152,56 @@
     </div>
 </section>
 
-<section class="works container">
-    <h2 class="title-center">Наши работы</h2>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="images/work1.jpg" alt="Работа 1"></div>
-            <div class="swiper-slide"><img src="images/work2.jpg" alt="Работа 2"></div>
-            <div class="swiper-slide"><img src="images/work3.jpg" alt="Работа 3"></div>
-            <div class="swiper-slide"><img src="images/work4.jpg" alt="Работа 4"></div>
-            <div class="swiper-slide"><img src="images/work5.jpg" alt="Работа 5"></div>
-            <div class="swiper-slide"><img src="images/work6.jpg" alt="Работа 6"></div>
-            <div class="swiper-slide"><img src="images/work7.jpg" alt="Работа 7"></div>
-            <div class="swiper-slide"><img src="images/work8.jpg" alt="Работа 8"></div>
-            <div class="swiper-slide"><img src="images/work9.jpg" alt="Работа 9"></div>
-            <div class="swiper-slide"><img src="images/work10.jpg" alt="Работа 10"></div>
-            <div class="swiper-slide"><img src="images/work11.jpg" alt="Работа 11"></div>
-            <div class="swiper-slide"><img src="images/work12.jpg" alt="Работа 12"></div>
-            <div class="swiper-slide"><img src="images/work13.jpg" alt="Работа 13"></div>
-            <div class="swiper-slide"><img src="images/work14.jpg" alt="Работа 14"></div>
-            <div class="swiper-slide"><img src="images/work15.jpg" alt="Работа 15"></div>
-            <div class="swiper-slide"><img src="images/work16.jpg" alt="Работа 16"></div>
-            <div class="swiper-slide"><img src="images/work17.jpg" alt="Работа 17"></div>
-            <div class="swiper-slide"><img src="images/work18.jpg" alt="Работа 18"></div>
-            <div class="swiper-slide"><img src="images/work19.jpg" alt="Работа 19"></div>
-            <div class="swiper-slide"><img src="images/work20.jpg" alt="Работа 20"></div>
+<!-- Works -->
+<section class="works" id="works">
+    <div class="container">
+        <h2 class="title-center reveal">Наши работы</h2>
+    </div>
 
+    <div class="swiper mySwiper reveal">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/work1.jpg" alt="Ремонт санузла — работа 1" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work2.jpg" alt="Ремонт санузла — работа 2" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work3.jpg" alt="Ремонт санузла — работа 3" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work4.jpg" alt="Ремонт санузла — работа 4" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work5.jpg" alt="Ремонт санузла — работа 5" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work6.jpg" alt="Ремонт санузла — работа 6" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work7.jpg" alt="Ремонт санузла — работа 7" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work8.jpg" alt="Ремонт санузла — работа 8" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work9.jpg" alt="Ремонт санузла — работа 9" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work10.jpg" alt="Ремонт санузла — работа 10" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work11.jpg" alt="Ремонт санузла — работа 11" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work12.jpg" alt="Ремонт санузла — работа 12" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work13.jpg" alt="Ремонт санузла — работа 13" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work14.jpg" alt="Ремонт санузла — работа 14" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work15.jpg" alt="Ремонт санузла — работа 15" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work16.jpg" alt="Ремонт санузла — работа 16" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work17.jpg" alt="Ремонт санузла — работа 17" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work18.jpg" alt="Ремонт санузла — работа 18" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work19.jpg" alt="Ремонт санузла — работа 19" loading="lazy"></div>
+            <div class="swiper-slide"><img src="images/work20.jpg" alt="Ремонт санузла — работа 20" loading="lazy"></div>
             <div class="swiper-slide">
-                <video class="work-video" controls muted playsinline>
+                <video class="work-video" controls muted playsinline preload="none">
                     <source src="images/video1.mp4" type="video/mp4">
                 </video>
             </div>
-
             <div class="swiper-slide">
-                <video class="work-video" controls muted playsinline>
+                <video class="work-video" controls muted playsinline preload="none">
                     <source src="images/video2.mp4" type="video/mp4">
                 </video>
             </div>
-
             <div class="swiper-slide">
-                <video class="work-video" controls muted playsinline>
+                <video class="work-video" controls muted playsinline preload="none">
                     <source src="images/video3.mp4" type="video/mp4">
                 </video>
             </div>
-
             <div class="swiper-slide">
-                <video class="work-video" controls muted playsinline>
+                <video class="work-video" controls muted playsinline preload="none">
                     <source src="images/video4.mp4" type="video/mp4">
                 </video>
             </div>
-
             <div class="swiper-slide">
-                <video class="work-video" controls muted playsinline>
+                <video class="work-video" controls muted playsinline preload="none">
                     <source src="images/video5.mp4" type="video/mp4">
                 </video>
             </div>
@@ -154,35 +212,76 @@
     </div>
 </section>
 
-<section class="price">
-    <div class="container">
-        <h2>Стоимость</h2>
-        <p class="price-val">Санузел под ключ — от <span>100 000 ₽</span></p>
-    </div>
-</section>
-
+<!-- Contacts / Footer -->
 <footer class="contacts" id="contacts">
-    <div class="container">
-        <!-- Заменил h2 на title-center для одинакового размера шрифта -->
-        <h2 class="title-center">Контакты</h2>
-        <div class="contact-links">
+    <div class="container contact-panel">
+        <div class="master-side reveal">
+            <img src="images/Iliyar.jpg" alt="Ханнанов Ильяр Аликович — мастер по ремонту санузлов" class="master-photo">
+            <div class="trust-list">
+                <span>✔ Работа по договору</span>
+                <span>✔ Гарантия 3 года</span>
+                <span>✔ Москва и область</span>
+            </div>
+        </div>
+
+        <div class="contact-side reveal">
+            <p class="section-label">О мастере</p>
+            <h2>Ханнанов Ильяр Аликович — ремонт санузлов под ключ</h2>
+            <p class="about-text">
+                Занимаюсь ремонтом санузлов под ключ: плиточные, сантехнические и электромонтажные работы.
+                Работаю аккуратно, по договору и с гарантией. Всегда на связи с клиентом и контролирую качество
+                на каждом этапе работ.
+            </p>
+
+            <div class="price-mini">
+                Санузел под ключ — от <span>100 000 ₽</span>
+            </div>
+
             <a href="tel:+79328503100" class="main-phone">+7 (932) 850-31-00</a>
-            <p>Email: ilyaru92@mail.ru</p>
+            <p class="email">Email: <a href="mailto:ilyaru92@mail.ru">ilyaru92@mail.ru</a></p>
+
+            <div class="messengers">
+                <a href="https://t.me/Iyarilyar" target="_blank" rel="noopener" class="messenger tg">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    Telegram
+                </a>
+                <a href="https://max.ru/u/f9LHodD0cOI2S9q7vMOdEiEE1UX4xm9GViCjO_Gkcknlh5A8co7yY4Wq4zo" target="_blank" rel="noopener" class="messenger max">
+                    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.5 16.5h-1.75v-5.25l-2.625 3.5h-.25l-2.625-3.5V16.5H8.5V7.5h1.625l2.375 3.25L14.875 7.5H16.5v9z"/></svg>
+                    Max
+                </a>
+                <a href="https://wa.me/79328503100" target="_blank" rel="noopener" class="messenger wa">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+
+            <form class="callback-form" id="callbackForm" novalidate>
+                <div class="input-wrap">
+                    <input type="tel" id="phoneInput" placeholder="+7 (___) ___-__-__" autocomplete="tel">
+                    <span class="input-error" id="phoneError">Введите корректный номер</span>
+                </div>
+                <button type="submit" class="btn btn-primary">Обратный звонок</button>
+            </form>
         </div>
-        <div class="messengers">
-            <a href="https://t.me/Iyarilyar" target="_blank" class="messenger tg">Telegram</a>
-            <!-- Кнопка Max теперь посередине -->
-            <a href="https://max.ru/u/f9LHodD0cOI2S9q7vMOdEiEE1UX4xm9GViCjO_Gkcknlh5A8co7yY4Wq4zo" target="_blank" class="messenger max">Max</a>
-            <a href="https://wa.me/79328503100" target="_blank" class="messenger wa">WhatsApp</a>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2025 Ханнанов Ильяр Аликович · Ремонт санузлов под ключ · Москва и МО</p>
         </div>
-        <a href="tel:+79328503100" class="btn btn-primary" style="margin-top: 30px;">Связаться сейчас</a>
     </div>
 </footer>
 
-<div class="modal" id="modal">
-    <span class="close" id="close">&times;</span>
-    <img class="modal-img" id="modalImg">
+<!-- Modal -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Увеличенное фото">
+    <button class="close" id="close" aria-label="Закрыть">&times;</button>
+    <img class="modal-img" id="modalImg" alt="Увеличенное фото работы">
 </div>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scrollTop" aria-label="Наверх">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
